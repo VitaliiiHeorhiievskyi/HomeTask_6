@@ -96,12 +96,12 @@ namespace HomeTask_6
             if (!CheckIp(ip))
                 throw new ArgumentException();
 
-            DayOfWeek popularDay= DayOfWeek.Friday;
+            DayOfWeek popularDay = DayOfWeek.Friday;
 
             int count = 0;
 
             List<Visitor> thisVisitor = Visitors.Where(i => i.Ip == ip).ToList();
-      
+
             for (int i = 0; i < 7; i++)
             {
                 if (thisVisitor.Where(j => ((int)j.Day == i + 1)).ToList().Count > count)

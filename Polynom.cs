@@ -207,14 +207,14 @@ namespace HomeTask_6
 
             foreach (var item in first.RankAndRealList)
             {
-                
+
                 foreach (var item2 in second.RankAndRealList)
                 {
 
-                    resPolynom[item.Item1 + item2.Item1] = item.Item2 * item2.Item2+resPolynom[item.Item1 + item2.Item1];
+                    resPolynom[item.Item1 + item2.Item1] = item.Item2 * item2.Item2 + resPolynom[item.Item1 + item2.Item1];
                 }
             }
-            
+
             return resPolynom;
         }
         public Polynom(string data)

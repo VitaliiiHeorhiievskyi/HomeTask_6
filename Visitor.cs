@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 enum DayOfWeek
 {
-    Monday=1,
+    Monday = 1,
     Tuesday,
     Wednesday,
     Thursday,
@@ -23,11 +23,11 @@ namespace HomeTask_6
 
         public string Ip
         {
-            get 
-            { 
-                return ip; 
+            get
+            {
+                return ip;
             }
-            set 
+            set
             {
                 if (value == null)
                     throw new ArgumentNullException();
@@ -45,15 +45,15 @@ namespace HomeTask_6
                         throw new ArgumentException("IP it's not correct!");
                 }
 
-                ip = value; 
+                ip = value;
             }
         }
 
         public DateTime Time { get; set; }
 
-        public DayOfWeek Day  { get; set; }
+        public DayOfWeek Day { get; set; }
 
-        public Visitor(string ip,DateTime time,DayOfWeek dayOfWeek)
+        public Visitor(string ip, DateTime time, DayOfWeek dayOfWeek)
         {
             Ip = ip;
 
